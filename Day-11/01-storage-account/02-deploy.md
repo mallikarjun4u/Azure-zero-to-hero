@@ -11,5 +11,12 @@ az group create --name vscode --location 'Central US'
 Switch to the folder where you have the `01-storage-account.json` or similar file
 
 ```
-az deployment group create --resource-group vscode --template-file 01-storage-account.json
+az deployment group create --resource-group vscode --template-file 01-storage-account.json+
+
+```
+```
+az deployment group create \
+  --name blanktemplate \
+  --resource-group myResourceGroup \
+  --template-file $templateFile
 ```
