@@ -31,4 +31,13 @@ az vm create \
 ```
 az group delete --name learn-azure-cli
 ```
+### Create st0258orage accunt
 
+az storage account create \
+  --name <account-name> \
+  --resource-group storage-resource-group \
+  --location eastus \
+  --sku Standard_RAGRS \
+  --kind StorageV2 \
+  --min-tls-version TLS1_2 \
+  --allow-blob-public-access false
